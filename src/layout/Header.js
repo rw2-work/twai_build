@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { useEffect } from "react";
 import { connect } from "react-redux";
-import { navigationToggle, walletToggle } from "../redux/actions/siteSettings";
+import {loginToggle } from "../redux/actions/siteSettings";
 import { stickyNav } from "../utilits";
 
-const Header = ({ walletToggle, navigationToggle }) => {
+const Header = ({ loginToggle}) => {
   useEffect(() => {
     stickyNav();
   }, []);
@@ -14,9 +14,6 @@ const Header = ({ walletToggle, navigationToggle }) => {
       <div className="header">
         <div className="header_in">
           <div className="trigger_logo">
-            {/* <div className="trigger" onClick={() => navigationToggle(true)}>
-              <span />
-            </div> */}
             <div className="logo">
               <Link href="/">
                 <a>
@@ -59,7 +56,7 @@ const Header = ({ walletToggle, navigationToggle }) => {
               href="#"
               onClick={(e) => {
                 e.preventDefault();
-                walletToggle(true);
+                loginToggle(true);
               }}
               className="metaportal_fn_button wallet_opener"
             >
@@ -74,6 +71,6 @@ const Header = ({ walletToggle, navigationToggle }) => {
 
 const mapStateToProps = (state) => ({});
 
-export default connect(mapStateToProps, { walletToggle, navigationToggle })(
+export default connect(mapStateToProps, { loginToggle })(
   Header
 );

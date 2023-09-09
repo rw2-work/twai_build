@@ -19,6 +19,11 @@ const nfts = (state = initialState, action) => {
         ...state,
         wallet: payload,
       };
+    case "LOGIN":
+      return {
+        ...state,
+        login: action.payload,
+      };
     case SEARCH:
       return {
         ...state,

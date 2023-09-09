@@ -9,3 +9,6 @@ export const walletToggle = (value) => (dispatch) => {
 export const searchToggle = (value) => (dispatch) => {
   dispatch({ type: SEARCH, payload: value });
 };
+export const loginToggle = (value) => (dispatch) => {
+  dispatch({ type: 'LOGIN', payload: value });
+};
