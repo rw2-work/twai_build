@@ -2,8 +2,6 @@ import Head from "next/head";
 import { Provider } from "react-redux";
 import store from "../src/redux/store";
 import "../styles/globals.css";
-import LoginPopUp from "../src/layout/LoginPopUp";
-
 function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>
@@ -28,7 +26,6 @@ function MyApp({ Component, pageProps }) {
         <link type="text/css" rel="stylesheet" href="/css/style.css?ver=4.1" />
       </Head>
       <Component {...pageProps} />
-      <LoginPopUp />
     </Provider>
   );
 }

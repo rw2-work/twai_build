@@ -1,4 +1,4 @@
-import { NAVIGATION, SEARCH, WALLET } from "../actions/type";
+import { NAVIGATION, SEARCH, LOGIN} from "../actions/type";
 
 const initialState = {
   navigation: false,
@@ -14,12 +14,7 @@ const nfts = (state = initialState, action) => {
         ...state,
         navigation: payload,
       };
-    case WALLET:
-      return {
-        ...state,
-        wallet: payload,
-      };
-    case "LOGIN":
+    case LOGIN:
       return {
         ...state,
         login: action.payload,

@@ -12,7 +12,7 @@ import ScrollTop from "./ScrollTop";
 import Searchbox from "./Searchbox";
 import SearchButton from "./SearchButton";
 import Social from "./Social";
-import WalletPopUp from "./WalletPopUp";
+import LoginPopUp from "./LoginPopUp";
 const Layout = ({ children, pageTitle }) => {
   useEffect(() => {
     holdSection();
@@ -36,7 +36,7 @@ const Layout = ({ children, pageTitle }) => {
       <Searchbox />
       {/* !Searchbox Popup */}
       {/* Wallet Popup */}
-      <WalletPopUp />
+      <LoginPopUp />
       {/* !Wallet Popup */}
       {/* Main */}
       <div className="metaportal_fn_main">

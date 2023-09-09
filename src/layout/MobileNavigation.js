@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { Fragment, useState } from "react";
 import { connect } from "react-redux";
-import { navigationToggle, walletToggle } from "../redux/actions/siteSettings";
-const MobileNavigation = ({ walletToggle, navigationToggle }) => {
+import { loginToggle } from "../redux/actions/siteSettings";
+const MobileNavigation = ({ loginToggle, }) => {
   const [toggle, setToggle] = useState(false);
   return (
     <Fragment>
@@ -57,7 +57,7 @@ const MobileNavigation = ({ walletToggle, navigationToggle }) => {
             <a
               href="#"
               className="metaportal_fn_button wallet_opener"
-              onClick={() => walletToggle(true)}
+              onClick={() => loginToggle(true)}
             >
               <span>Join Us</span>
             </a>
@@ -116,6 +116,6 @@ const mapStateToProps = (state) => ({
   navigation: state.site.navigation,
 });
 
-export default connect(mapStateToProps, { walletToggle, navigationToggle })(
+export default connect(mapStateToProps, { loginToggle, })(
   MobileNavigation
 );
