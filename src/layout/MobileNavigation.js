@@ -9,9 +9,6 @@ const MobileNavigation = ({ loginToggle, }) => {
       <div className="metaportal_fn_mobnav">
         <div className="mob_top">
           <div className="social_trigger">
-            {/* <div className="trigger" onClick={() => navigationToggle(true)}>
-              <span />
-            </div> */}
             <div className="social">
               <ul>
                 <li>
@@ -81,23 +78,28 @@ const MobileNavigation = ({ loginToggle, }) => {
         <div className="mob_bot" style={{ display: toggle ? "block" : "none" }}>
           <ul>
             <li>
-              <a className="creative_link" href="#home">
-                Home
+              <a className="creative_link" href="#what_is_twai">
+                What&apos;s Twai
               </a>
             </li>
             <li>
-              <a className="creative_link" href="#about">
-                About
+              <a className="creative_link" href="#our_mission">
+                Our Mission
               </a>
             </li>
             <li>
-              <a className="creative_link" href="#collection">
-                Collection
+              <a className="creative_link" href="#why_twai">
+                Why TWAI
               </a>
             </li>
             <li>
-              <a className="creative_link" href="#news">
-                Blog
+              <a className="creative_link" href="#topics">
+                Topics
+              </a>
+            </li>
+            <li>
+              <a className="creative_link" href="#featured">
+                Featured
               </a>
             </li>
             <li>

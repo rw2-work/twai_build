@@ -1,0 +1,349 @@
+
+
+
+/* :root {
+    --primary: #6B43FF;
+    --primary-light: #6667B0;
+    --violet-light: #B492FD;
+    --secondary: #1D1D1D;
+    --white: #F4F1FF;
+    --text: #323760;
+    --info-side-background: #ad4ef5;
+} */
+
+
+/* :root{ */
+	/* --mc1: #cc00ff; */
+	/* --mc1: #26a6a6; */
+
+	
+	/* --mc2: #7000ff; */
+	/* --mc2: #17a2b8;
+	
+
+	
+	--hc: #ddd;
+	--bc: #9ba0b8;
+	--hff: 'Heebo', sans-serif;
+	--bff: 'Nunito', sans-serif; */
+/* } */
+
+ /* body {
+    font-size: 16px;
+    background: var(--info-side-background);
+
+}  */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mulish;
+} */
+
+.socials_row {
+    display: flex;
+    gap: 16px;
+}
+
+.socials_row img {
+    width: 24px;
+    height: 24px;
+}
+
+.socials_row a {
+    padding: 8px;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 30px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 1rem;
+    /* color: var(--text); */
+    color: var(--hc);
+
+    padding: 8px;
+    border: 1px solid var(--mc1);
+    font-weight: 700;
+}
+
+.socials_row  a:hover {
+    color: var(--mc1);
+    border: 1px solid var(--hc);
+}
+
+.divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--mc2);
+    gap: 10px;
+    align-items: center;
+}
+
+.divider_line {
+    width: 33.33%;
+    height: 1px;
+    background-color: var(--mc2);
+    opacity: .2;
+}
+
+.form_wrapper {
+    position: relative;
+    display: grid;
+    /* grid-template-columns: 3fr 2fr; */
+    max-width: 1200px;
+
+}
+
+
+.form_side {
+    /* padding: 40px 32px; */
+    /* padding: 10px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+     background-color: transparent;
+     /* background: linear-gradient(45deg,var(--mc1),var(--mc2),var(--mc1),var(--mc2)); */
+    color: white;
+
+
+} 
+
+/* .info-side {
+    height: 100vh;
+    padding: 248px 12px 8px 12px;
+    color: #401B3D;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background: linear-gradient(92.15deg, 
+        #B492FD 30.13%, #ad4ef5 95.43%);
+}
+
+.info-side img {
+    max-width: 360px;
+    z-index: 1;
+} */
+
+.welcome_message {
+    max-width: 360px;
+}
+
+.logo {
+    display: block;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.my_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    gap: 16px;
+    max-width: 460px;
+    min-width: 300px;
+    width: 100%;
+    /* padding: 48px 32px; */
+    padding: 15px;
+
+
+    height: fit-content;
+    box-shadow: 
+        rgba(100, 100, 111, 0.2)
+        0px 7px 29px 0px;
+
+
+}
+
+.form_welcome {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.form_welcome_row {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+   
+    margin: 25px 0 10px 0;
+}
+
+.form_welcome_row h1 {
+    font-size: 1.6rem;
+    text-align: center;
+    /* margin-bottom: 10px; */
+}
+
+.my_form__button {
+    /* background-color: var(--mc1); */
+    background-color: transparent;
+
+    color: var(--hc);
+    white-space: nowrap;
+    /* border: none; */
+    border: 3px solid var(--mc1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    line-height: 50px;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: .025em;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 800;
+    min-height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.15);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.my_form__button:hover {
+
+    color: var(--mc1);
+    border: 3px solid var(--hc);
+
+
+}
+
+.my_form__actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--mc2);
+    gap: 16px;
+    margin-top: 8px;
+    font-size: smaller;
+}
+
+.my_form__actions a {
+    /* color: var(--mc1); */
+    color: var(--hc);
+
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.my_form__actions a:first-child {
+    text-align: left;
+}
+
+
+.my_form__actions a:last-child {
+    text-align: right;
+}
+
+.my_form__actions a:hover {
+    text-decoration: underline;
+    color: var(--mc1);
+}
+
+.my_form__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.my_form__signup {
+    display: flex;
+    justify-content: center;
+}
+
+.my_form__signup a {
+    color: var(--mc1);
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.my_form__signup a:hover {
+    text-decoration: underline;
+}
+
+.text_field input {
+    color: var(--mc2);
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 100%;
+    width: 100%;
+    /* border: 1px solid var(--mc2); */
+    border: 3px solid transparent;
+
+    height: 50px;
+    letter-spacing: .03rem;
+    background-color: transparent;
+    outline: none;
+    transition: .25s;
+    border-radius: 8px;
+    text-indent: 20px;
+    margin-top: 4px;
+}
+
+.text_field label:focus-within  {
+    color: var(--mc1);
+    
+}
+
+.text_field {
+    position: relative;
+}
+
+.text_field svg {
+    position: absolute;
+    right: -2px;
+    bottom: -4px;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%,-50%);
+    transform-origin: center;
+}
+
+.text_field input:focus {
+    border: 1px solid var(--mc1);
+
+    background-color: white;
+
+}
+
+
+.text_field input:focus + svg {
+    stroke: var(--mc1);
+} 
+
+.text_field label {
+    color: var(--mc2);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .03rem;
+    z-index: 10;
+}
+
+@media (max-width: 840px) {
+    .form_wrapper {
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+    
+    /* .info-side {
+        display: none;
+        padding: 48px 48px 48px 32px;
+    } */
+}

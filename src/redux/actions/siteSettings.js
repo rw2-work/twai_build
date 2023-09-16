@@ -8,4 +8,6 @@ export const searchToggle = (value) => (dispatch) => {
 };
 export const loginToggle = (value) => (dispatch) => {
   dispatch({ type: LOGIN, payload: value });
+
 };
+

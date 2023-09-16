@@ -6,13 +6,13 @@ import { dataBgImg, holdSection, imgToSVG } from "../utilits";
 import Footer from "./Footer";
 import Header from "./Header";
 import MobileNavigation from "./MobileNavigation";
-// import Navigation from "./Navigation";
 import PreLoader from "./PreLoader";
 import ScrollTop from "./ScrollTop";
-import Searchbox from "./Searchbox";
-import SearchButton from "./SearchButton";
 import Social from "./Social";
 import LoginPopUp from "./LoginPopUp";
+
+
+
 const Layout = ({ children, pageTitle }) => {
   useEffect(() => {
     holdSection();
@@ -21,23 +21,19 @@ const Layout = ({ children, pageTitle }) => {
   }, []);
 
   return (
+
     <Fragment>
+
       <Head>
-        <title>MetaPortal | {pageTitle}</title>
+        <title>Twisting with AI | {pageTitle}</title>
       </Head>
       <ImageView />
       <VideoPopup />
       <PreLoader />
       {/* !Preloader */}
-      {/* Left Navigation */}
-      {/* <Navigation /> */}
-      {/* !Left Navigation */}
-      {/* Searchbox Popup */}
-      <Searchbox />
-      {/* !Searchbox Popup */}
-      {/* Wallet Popup */}
+      {/* Login Popup */}
       <LoginPopUp />
-      {/* !Wallet Popup */}
+      {/* !Login Popup */}
       {/* Main */}
       <div className="metaportal_fn_main">
         {/* Mobile Navigation */}
@@ -60,9 +56,6 @@ const Layout = ({ children, pageTitle }) => {
         {/* Totop */}
         <ScrollTop />
         {/* /Totop */}
-        {/* Search Button */}
-        <SearchButton />
-        {/* !Search Button */}
       </div>
     </Fragment>
   );

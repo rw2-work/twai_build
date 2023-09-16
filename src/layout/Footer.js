@@ -6,14 +6,8 @@ const Footer = () => {
         <div className="footer">
           <div className="left_part">
             <p>
-              Copyright 2022 — Designed &amp; Developed by{" "}
-              <a
-                href="https://themeforest.net/user/frenify/portfolio"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Frenify
-              </a>
+              Copyright 2023 — {" "}
+              <Link href="/">Twisting With AI</Link>  
             </p>
           </div>
           <div className="right_part">

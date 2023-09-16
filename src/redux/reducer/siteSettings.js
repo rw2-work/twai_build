@@ -29,3 +29,4 @@ const nfts = (state = initialState, action) => {
   }
 };
 export default nfts;
+

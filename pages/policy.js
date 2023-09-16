@@ -16,8 +16,12 @@ const Policy = () => {
             </div>
           </div>
           <p>
-            <strong>Suggested text:</strong> Our website address is:
-            https://frenify.net/envato/frenify/html/meta-portal/1/
+            At <strong>Twisting with AI,</strong> we are dedicated to exploring
+            the captivating realm of artificial intelligence. Our blog is a
+            platform for sharing knowledge, insights, and discussions related to
+            AI and its diverse applications. We strive to foster a community of
+            AI enthusiasts and learners, providing valuable content and engaging
+            experiences.
           </p>
           <h3 className="fn__maintitle" data-text="Comments">
             Comments
@@ -29,17 +33,12 @@ const Policy = () => {
             </div>
           </div>
           <p>
-            Suggested text: When visitors leave comments on the site we collect
-            the data shown in the comments form, and also the {`visitor’s`} IP
-            address and browser user agent string to help spam detection.
-          </p>
-          <p>
-            An anonymized string created from your email address (also called a
-            hash) may be provided to the Gravatar service to see if you are
-            using it. The Gravatar service privacy policy is available here:
-            https://automattic.com/privacy/. After approval of your comment,
-            your profile picture is visible to the public in the context of your
-            comment.
+            When visitors leave comments on our blog, we collect the data shown
+            in the comments form, along with the visitor&apos;s IP address and
+            browser user agent string to help with spam detection. This
+            information is crucial for maintaining the integrity of our
+            discussions and ensuring a safe and respectful environment for all
+            participants.
           </p>
           <h3 className="fn__maintitle" data-text="Media">
             Media
@@ -51,10 +50,11 @@ const Policy = () => {
             </div>
           </div>
           <p>
-            <strong>Suggested text:</strong> If you upload images to the
-            website, you should avoid uploading images with embedded location
-            data (EXIF GPS) included. Visitors to the website can download and
-            extract any location data from images on the website.
+            If you upload images to our blog, you should avoid uploading images
+            with embedded location data (EXIF GPS) included. Visitors to the
+            website can download and extract any location data from images on
+            the blog. We recommend being mindful of the information contained in
+            media files to protect your privacy.
           </p>
           <h3 className="fn__maintitle" data-text="Cookies">
             Cookies
@@ -66,29 +66,11 @@ const Policy = () => {
             </div>
           </div>
           <p>
-            Suggested text: If you leave a comment on our site you may opt-in to
-            saving your name, email address and website in cookies. These are
-            for your convenience so that you do not have to fill in your details
-            again when you leave another comment. These cookies will last for
-            one year.
-          </p>
-          <p>
-            If you visit our login page, we will set a temporary cookie to
-            determine if your browser accepts cookies. This cookie contains no
-            personal data and is discarded when you close your browser.
-          </p>
-          <p>
-            When you log in, we will also set up several cookies to save your
-            login information and your screen display choices. Login cookies
-            last for two days, and screen options cookies last for a year. If
-            you select {`"Remember Me"`}, your login will persist for two weeks.
-            If you log out of your account, the login cookies will be removed.
-          </p>
-          <p>
-            If you edit or publish an article, an additional cookie will be
-            saved in your browser. This cookie includes no personal data and
-            simply indicates the post ID of the article you just edited. It
-            expires after 1 day.
+            Our website may use cookies to enhance your browsing experience.
+            These cookies are small text files stored on your computer that help
+            us analyze web traffic, improve user experience, and tailor content
+            to your preferences. You have the option to accept or decline
+            cookies through your browser settings.
           </p>
           <h3
             className="fn__maintitle"
@@ -103,17 +85,12 @@ const Policy = () => {
             </div>
           </div>
           <p>
-            <strong>Suggested text:</strong> Articles on this site may include
-            embedded content (e.g. videos, images, articles, etc.). Embedded
-            content from other websites behaves in the exact same way as if the
-            visitor has visited the other website.
-          </p>
-          <p>
-            These websites may collect data about you, use cookies, embed
-            additional third-party tracking, and monitor your interaction with
-            that embedded content, including tracking your interaction with the
-            embedded content if you have an account and are logged in to that
-            website.
+            Articles on this blog may include embedded content (e.g., videos,
+            images, articles) from other websites. Embedded content behaves in
+            the same way as if you visited the other website. These websites may
+            collect data about you, use cookies, embed additional third-party
+            tracking, and monitor your interaction with the embedded content. We
+            encourage you to review the privacy policies of these websites.
           </p>
           <h3 className="fn__maintitle" data-text="Who we share your data with">
             Who we share your data with
@@ -125,8 +102,10 @@ const Policy = () => {
             </div>
           </div>
           <p>
-            <strong>Suggested text:</strong> If you request a password reset,
-            your IP address will be included in the reset email.
+            We do not share your personal data with third parties unless
+            required by law or for essential functions of the website, such as
+            analytics or comment moderation. Your privacy is important to us,
+            and we take measures to protect your information.
           </p>
           <h3
             className="fn__maintitle"
@@ -141,17 +120,12 @@ const Policy = () => {
             </div>
           </div>
           <p>
-            <strong>Suggested text:</strong> If you leave a comment, the comment
-            and its metadata are retained indefinitely. This is so we can
-            recognize and approve any follow-up comments automatically instead
-            of holding them in a moderation queue.
-          </p>
-          <p>
-            For users that register on our website (if any), we also store the
+            If you leave a comment, the comment and its metadata are retained
+            indefinitely. This allows us to recognize and approve any follow-up
+            comments automatically, providing a smoother user experience. For
+            users who register on our website (if any), we also store the
             personal information they provide in their user profile. All users
-            can see, edit, or delete their personal information at any time
-            (except they cannot change their username). Website administrators
-            can also see and edit that information.
+            can see, edit, or delete their personal information at any time.
           </p>
           <h3
             className="fn__maintitle"
@@ -166,7 +140,7 @@ const Policy = () => {
             </div>
           </div>
           <p>
-            <strong>Suggested text:</strong> If you have an account on this
+            If you have an account on this
             site, or have left comments, you can request to receive an exported
             file of the personal data we hold about you, including any data you
             have provided to us. You can also request that we erase any personal
@@ -183,7 +157,7 @@ const Policy = () => {
             </div>
           </div>
           <p>
-            <strong>Suggested text:</strong> Visitor comments may be checked
+            Visitor comments may be checked
             through an automated spam detection service.
           </p>
         </div>

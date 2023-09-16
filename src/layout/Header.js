@@ -3,11 +3,26 @@ import { useEffect } from "react";
 import { connect } from "react-redux";
 import {loginToggle } from "../redux/actions/siteSettings";
 import { stickyNav } from "../utilits";
+import React, { useState } from 'react';
+
 
 const Header = ({ loginToggle}) => {
   useEffect(() => {
     stickyNav();
   }, []);
+
+  
+
+const [theme, setTheme] = useState("dark-theme");
+
+const toggleTheme = ()=>{
+    theme === "dark-theme" ? setTheme("light-theme") : setTheme("dark-theme");
+};
+
+useEffect(()=>{
+
+    document.body.className = theme;
+}, [theme]);
 
   return (
     <header id="header">
@@ -23,25 +38,30 @@ const Header = ({ loginToggle}) => {
             </div>
           </div>
           <div className="nav" style={{ opacity: 1 }}>
-            <ul>
-              <li>
-                <Link href="/#home">
-                  <a className="creative_link">Home</a>
+            <ul> 
+            <li>
+                <Link href="/#what_is_twai">
+                  <a className="creative_link">What&apos;s TWAI</a>
                 </Link>
               </li>
               <li>
-                <Link href="/#about">
-                  <a className="creative_link">About</a>
+                <Link href="/#our_mission">
+                  <a className="creative_link">Our Mission</a>
                 </Link>
               </li>
               <li>
-                <Link href="/#collection">
-                  <a className="creative_link">Collection</a>
+                <Link href="/#why_twai">
+                  <a className="creative_link">Why TWAI</a>
                 </Link>
               </li>
               <li>
-                <Link href="/#news">
-                  <a className="creative_link">Blog</a>
+                <Link href="/#topics">
+                  <a className="creative_link">Topics</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/#featured">
+                  <a className="creative_link">Featured</a>
                 </Link>
               </li>
               <li>
@@ -62,6 +82,9 @@ const Header = ({ loginToggle}) => {
             >
               <span>Join Us</span>
             </a>
+
+
+
           </div>
         </div>
       </div>
