@@ -3,7 +3,7 @@
 
 // const LoginForm = () => {
 //   useEffect(() => {
-    
+
 //   }, []);
 
 //   function toggleForm(formType) {
@@ -129,21 +129,19 @@
 //         </form>
 //     </div>
 // </div>
-     
+
 //     </>
 //   );
 // };
 
 // export default LoginForm;
 
-
-
 // import React, { useEffect } from 'react';
 // import login from "/styles/LoginForm.module.css"
 
 // const LoginForm = () => {
 //   useEffect(() => {
-    
+
 //   }, []);
 
 //  function toggleForm(formType) {
@@ -268,144 +266,148 @@
 //         </form>
 //     </div>
 // </div>
-     
+
 //     </>
 //   );
 // };
 
 // export default LoginForm;
 
-
-
-
-
-import React, { useState } from 'react';
-import login from "/styles/LoginForm.module.css"
+import React, { useState } from "react";
+import login from "/styles/LoginForm.module.css";
 
 const LoginForm = () => {
   const [showSignupForm, setShowSignupForm] = useState(true);
 
   function toggleForm(formType) {
-    setShowSignupForm(formType === 'signup');
+    setShowSignupForm(formType === "signup");
   }
 
   return (
     <>
-            <div className={login.form_wrapper} style={{ display: showSignupForm ? 'block' : 'none' }}>
-
-
-                <div className={login.form_side}>
-                    <form className={login.my_form}>
-                        <div className={login.form_welcome_row}>
-                            <h1>Sign Up Here &#x1F44B;</h1>
-                        </div>
-                        <div className={login.socials_row}>
-                            <a href="#" title="Use Google">
-                                <img src="/img/assets/google.png" alt="Google" />Use Google
-                            </a>
-                            <a href="#" title="Use Apple">
-                                <img src="/img/assets/apple.png" alt="Apple" /> Use Apple
-                            </a>
-                        </div>
-                        <div className={login.divider}>
-                            <div className={login.divider_line}></div> Or <div className={login.divider_line}></div>
-                        </div>
-                        <div className={login.text_field}>
-                            <label for="email">Email:
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    autoComplete="off"
-                                    placeholder="Your Email"
-                                    required
-                                />
-                            </label>
-                        </div>
-                        <div className={login.text_field}>
-                            <label for="password">Password:
-                                <input
-                                    id="password"
-                                    type="password"
-                                    name="password"
-                                    placeholder="Your Password"
-                                    title="Minimum 6 characters at least 1 Alphabet and 1 Number"
-                                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
-                                    required
-                                />
-                            </label>
-                        </div>
-                        <button type="submit" className={login.my_form__button}>
-                            Sign Up
-                        </button>
-                        <div className={login.my_form__actions}>
-                            <a href="#" title="Login" onClick={() => toggleForm('login')}>Already have an account?</a>
-                        </div>
-                    </form>
-                </div>
-
-
-
-
+      <div
+        className={login.form_wrapper}
+        style={{ display: showSignupForm ? "block" : "none" }}
+      >
+        <div className={login.form_side}>
+          <form className={login.my_form}>
+            <div className={login.form_welcome_row}>
+              <h1>Sign Up Here &#x1F44B;</h1>
             </div>
-
-            <div className={login.form_wrapper} style={{ display: showSignupForm ? 'none' : 'block' }}>
-
-                <div className={login.form_side}>
-                    <form className={login.my_form}>
-                        <div className={login.form_welcome_row}>
-                            <h1>Login Here &#x1F44F;</h1>
-                        </div>
-                        <div className={login.socials_row}>
-                            <a href="#" title="Use Google">
-                                <img src="/img/assets/google.png" alt="Google" />Use Google
-                            </a>
-                            <a href="#" title="Use Apple">
-                                <img src="/img/assets/apple.png" alt="Apple" /> Use Apple
-                            </a>
-                        </div>
-                        <div className={login.divider}>
-                            <div className={login.divider_line}></div> Or <div className={login.divider_line}></div>
-                        </div>
-                        <div className={login.text_field}>
-                            <label for="email">Email:
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    autoComplete="off"
-                                    placeholder="Your Email"
-                                    required
-                                />
-                            </label>
-                        </div>
-                        <div className={login.text_field}>
-                            <label for="password">Password:
-                                <input
-                                    id="password"
-                                    type="password"
-                                    name="password"
-                                    placeholder="Your Password"
-                                    title="Minimum 6 characters at least 1 Alphabet and 1 Number"
-                                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
-                                    required
-                                />
-                            </label>
-                        </div>
-                        <button type="submit" className={login.my_form__button}>
-                            Login
-                        </button>
-                        <div className={login.my_form__actions}>
-                            <a href="#" title="Sign Up" onClick={() => toggleForm('signup')}>Don't have an account?</a>
-                        </div>
-                    </form>
-                </div>
-
-
-
+            <div className={login.socials_row}>
+              <a href="#" title="Use Google">
+                <img src="/img/assets/google.png" alt="Google" />
+                Use Google
+              </a>
+              <a href="#" title="Use Apple">
+                <img src="/img/assets/apple.png" alt="Apple" /> Use Apple
+              </a>
             </div>
-        </>
-    );
+            <div className={login.divider}>
+              <div className={login.divider_line}></div> Or{" "}
+              <div className={login.divider_line}></div>
+            </div>
+            <div className={login.text_field}>
+              <label for="email">
+                Email:
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autoComplete="off"
+                  placeholder="Your Email"
+                  required
+                />
+              </label>
+            </div>
+            <div className={login.text_field}>
+              <label for="password">
+                Password:
+                <input
+                  id="password"
+                  type="password"
+                  name="password"
+                  placeholder="Your Password"
+                  title="Minimum 6 characters at least 1 Alphabet and 1 Number"
+                  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                  required
+                />
+              </label>
+            </div>
+            <button type="submit" className={login.my_form__button}>
+              Sign Up
+            </button>
+            <div className={login.my_form__actions}>
+              <a href="#" title="Login" onClick={() => toggleForm("login")}>
+                Already have an account?
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div
+        className={login.form_wrapper}
+        style={{ display: showSignupForm ? "none" : "block" }}
+      >
+        <div className={login.form_side}>
+          <form className={login.my_form}>
+            <div className={login.form_welcome_row}>
+              <h1>Login Here &#x1F44F;</h1>
+            </div>
+            <div className={login.socials_row}>
+              <a href="#" title="Use Google">
+                <img src="/img/assets/google.png" alt="Google" />
+                Use Google
+              </a>
+              <a href="#" title="Use Apple">
+                <img src="/img/assets/apple.png" alt="Apple" /> Use Apple
+              </a>
+            </div>
+            <div className={login.divider}>
+              <div className={login.divider_line}></div> Or{" "}
+              <div className={login.divider_line}></div>
+            </div>
+            <div className={login.text_field}>
+              <label for="email">
+                Email:
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autoComplete="off"
+                  placeholder="Your Email"
+                  required
+                />
+              </label>
+            </div>
+            <div className={login.text_field}>
+              <label for="password">
+                Password:
+                <input
+                  id="password"
+                  type="password"
+                  name="password"
+                  placeholder="Your Password"
+                  title="Minimum 6 characters at least 1 Alphabet and 1 Number"
+                  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                  required
+                />
+              </label>
+            </div>
+            <button type="submit" className={login.my_form__button}>
+              Login
+            </button>
+            <div className={login.my_form__actions}>
+              <a href="#" title="Sign Up" onClick={() => toggleForm("signup")}>
+                Don&apos;t have an account?
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default LoginForm;

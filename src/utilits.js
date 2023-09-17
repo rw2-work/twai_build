@@ -81,6 +81,20 @@ export const scrollTop = () => {
   });
 };
 
+// theme toggle
+export const handleThemeScroll  = () => {
+  const body = document.querySelector("body");
+
+  window.addEventListener("scroll", () => {
+    let offset = window.scrollY;
+    if (offset > 300) {
+      body.classList.add("theme-toggle-active");
+    } else {
+      body.classList.remove("theme-toggle-active");
+    }
+  });
+};
+
 export const heroSlider2 = () => {
   const flow_calc = (element) => {
     let w = element.clientWidth,

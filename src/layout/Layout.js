@@ -8,17 +8,21 @@ import Header from "./Header";
 import MobileNavigation from "./MobileNavigation";
 import PreLoader from "./PreLoader";
 import ScrollTop from "./ScrollTop";
+import useThemeToggle from "./ThemeToggle";
 import Social from "./Social";
 import LoginPopUp from "./LoginPopUp";
 
 
-
 const Layout = ({ children, pageTitle }) => {
+
+  const { ThemeToggleButton } = useThemeToggle("dark-theme");
+
   useEffect(() => {
     holdSection();
     imgToSVG();
     dataBgImg();
   }, []);
+
 
   return (
 
@@ -56,6 +60,9 @@ const Layout = ({ children, pageTitle }) => {
         {/* Totop */}
         <ScrollTop />
         {/* /Totop */}
+        {/* ThemeToggle */}
+        {ThemeToggleButton}
+        {/* /ThemeToggle */}
       </div>
     </Fragment>
   );
